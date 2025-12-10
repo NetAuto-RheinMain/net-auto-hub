@@ -17,13 +17,33 @@ export function HeroSection() {
       <div className="absolute inset-0 mesh-gradient" />
       
       {/* Animated geometric lines */}
-      <div className="absolute inset-0 overflow-hidden opacity-20">
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-foreground/50 to-transparent" />
-        <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-foreground/30 to-transparent" />
-        <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-foreground/50 to-transparent" />
-        <div className="absolute left-1/4 top-0 h-full w-px bg-gradient-to-b from-transparent via-foreground/30 to-transparent" />
-        <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-foreground/50 to-transparent" />
-        <div className="absolute left-3/4 top-0 h-full w-px bg-gradient-to-b from-transparent via-foreground/30 to-transparent" />
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Horizontal lines with animation */}
+        <div className="absolute top-1/4 left-0 w-full h-px opacity-20">
+          <div className="h-full bg-gradient-to-r from-transparent via-foreground/50 to-transparent animate-shimmer" />
+        </div>
+        <div className="absolute top-1/2 left-0 w-full h-px opacity-10">
+          <div className="h-full bg-gradient-to-r from-transparent via-foreground/30 to-transparent" />
+        </div>
+        <div className="absolute top-3/4 left-0 w-full h-px opacity-20">
+          <div className="h-full bg-gradient-to-r from-transparent via-foreground/50 to-transparent animate-shimmer" style={{ animationDelay: "1s" }} />
+        </div>
+        
+        {/* Vertical lines */}
+        <div className="absolute left-1/4 top-0 h-full w-px opacity-10">
+          <div className="w-full h-full bg-gradient-to-b from-transparent via-foreground/30 to-transparent" />
+        </div>
+        <div className="absolute left-1/2 top-0 h-full w-px opacity-15">
+          <div className="w-full h-full bg-gradient-to-b from-transparent via-foreground/50 to-transparent" />
+        </div>
+        <div className="absolute left-3/4 top-0 h-full w-px opacity-10">
+          <div className="w-full h-full bg-gradient-to-b from-transparent via-foreground/30 to-transparent" />
+        </div>
+
+        {/* Floating particles */}
+        <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-accent/50 animate-float" />
+        <div className="absolute top-2/3 right-1/3 w-2 h-2 rounded-full bg-glow-cyan/30 animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute bottom-1/4 left-1/2 w-1.5 h-1.5 rounded-full bg-accent/40 animate-float" style={{ animationDelay: "1s" }} />
       </div>
 
       {/* Vignette effect */}
@@ -36,6 +56,22 @@ export function HeroSection() {
             <span className="text-sm text-muted-foreground tracking-wide">
               Community-Driven Innovation
             </span>
+          </div>
+        </AnimatedSection>
+
+        {/* Logo Placeholder */}
+        <AnimatedSection delay={50}>
+          <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 animate-glow-pulse rounded-2xl">
+            <div className="absolute inset-0 rounded-2xl border border-foreground/20 bg-secondary/30 backdrop-blur-sm flex items-center justify-center overflow-hidden group hover-scale">
+              {/* Placeholder icon - replace with actual logo */}
+              <div className="text-5xl md:text-6xl font-bold tracking-tighter text-foreground/90">
+                NA
+              </div>
+              {/* Shine effect */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/5 to-transparent animate-shimmer" />
+              </div>
+            </div>
           </div>
         </AnimatedSection>
 
@@ -63,7 +99,7 @@ export function HeroSection() {
             <Button
               onClick={scrollToAbout}
               size="lg"
-              className="min-w-[180px] bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all duration-300 glow-border-hover"
+              className="min-w-[180px] bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all duration-300 hover-glow"
             >
               Explore NetAuto
             </Button>

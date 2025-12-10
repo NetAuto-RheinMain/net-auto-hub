@@ -36,13 +36,13 @@ export function FoundersSection() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {founders.map((founder, index) => (
             <AnimatedSection key={founder.name} delay={index * 150}>
-              <div className="group relative p-8 rounded-lg border border-border/50 bg-card hover:border-foreground/20 transition-all duration-300 hover-lift">
+              <div className="group relative p-8 rounded-lg border border-border/50 bg-card hover:border-foreground/20 transition-all duration-500 hover-lift card-shine">
                 {/* Glow effect on hover */}
-                <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 glow-border" />
+                <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 glow-border pointer-events-none" />
                 
                 <div className="relative z-10">
                   {/* Avatar */}
-                  <div className="w-24 h-24 rounded-full overflow-hidden mb-6 mx-auto border-2 border-border group-hover:border-foreground/30 transition-colors grayscale group-hover:grayscale-0 duration-500">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-6 mx-auto border-2 border-border group-hover:border-foreground/30 transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:shadow-[0_0_30px_hsl(var(--glow)/0.3)]">
                     <img
                       src={founder.image}
                       alt={founder.name}
@@ -64,7 +64,7 @@ export function FoundersSection() {
                         href={founder.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 border border-border rounded-md hover:bg-secondary hover:border-foreground/20 transition-all"
+                        className="p-2.5 border border-border rounded-md hover:bg-secondary hover:border-foreground/20 transition-all duration-300 icon-bounce"
                         aria-label={`${founder.name}'s GitHub`}
                       >
                         <Github size={18} />
@@ -73,7 +73,7 @@ export function FoundersSection() {
                         href={founder.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 border border-border rounded-md hover:bg-secondary hover:border-foreground/20 transition-all"
+                        className="p-2.5 border border-border rounded-md hover:bg-secondary hover:border-foreground/20 transition-all duration-300 icon-bounce"
                         aria-label={`${founder.name}'s LinkedIn`}
                       >
                         <Linkedin size={18} />
