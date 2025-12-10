@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { PhotoGallery } from "@/components/ui/PhotoGallery";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Github, Image } from "lucide-react";
 
@@ -11,6 +12,12 @@ const events = [
     location: "Berlin, Germany",
     description: "Our inaugural event brought together network automation pioneers for an intensive day of knowledge sharing. From fundamentals to advanced topics, Episode 1 set the foundation for the NetAuto community.",
     image: "/placeholder.svg",
+    photos: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+    ],
     agenda: [
       "Welcome & Community Introduction",
       "Network Automation 101: Getting Started",
@@ -29,6 +36,12 @@ const events = [
     location: "Vienna, Austria",
     description: "A special winter edition focusing on Birds of a Feather sessions. Attendees participated in open discussions, unconference-style sessions, and collaborative problem-solving workshops.",
     image: "/placeholder.svg",
+    photos: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+    ],
     agenda: [
       "Opening Keynote: State of Network Automation",
       "BoF Session: Infrastructure as Code Challenges",
@@ -47,6 +60,12 @@ const events = [
     location: "Zurich, Switzerland",
     description: "Episode 3 pushed boundaries with advanced topics including AI-assisted network operations, intent-based networking, and zero-trust automation patterns.",
     image: "/placeholder.svg",
+    photos: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+    ],
     agenda: [
       "AI/ML in Network Operations",
       "Intent-Based Networking Deep Dive",
@@ -81,27 +100,27 @@ const PreviousEvents = () => {
 
       {/* Events List */}
       <section className="pb-32 section-padding">
-        <div className="max-w-5xl mx-auto space-y-24">
+        <div className="max-w-6xl mx-auto space-y-32">
           {events.map((event, index) => (
             <AnimatedSection key={event.id} delay={index * 100}>
               <article className="group">
-                {/* Event Image */}
-                <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 border border-border/50">
+                {/* Event Header Image */}
+                <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 border border-border/50 hover-lift">
                   <img
                     src={event.image}
                     alt={event.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                   
                   {/* Event badge */}
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 text-sm font-medium">
+                  <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 text-sm font-medium">
                     Episode {event.id}
                   </div>
                 </div>
 
                 {/* Event Content */}
-                <div className="grid lg:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-2 gap-8 mb-10">
                   {/* Left: Info */}
                   <div>
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -126,7 +145,7 @@ const PreviousEvents = () => {
                     <div className="flex flex-wrap gap-3">
                       <Button
                         variant="outline"
-                        className="border-foreground/30 hover:bg-foreground/10"
+                        className="border-foreground/30 hover:bg-foreground/10 hover:scale-105 transition-all duration-300"
                         asChild
                       >
                         <a href={event.githubLink} target="_blank" rel="noopener noreferrer">
@@ -136,7 +155,7 @@ const PreviousEvents = () => {
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-foreground/30 hover:bg-foreground/10"
+                        className="border-foreground/30 hover:bg-foreground/10 hover:scale-105 transition-all duration-300"
                         asChild
                       >
                         <a href={event.photosLink} target="_blank" rel="noopener noreferrer">
@@ -148,12 +167,12 @@ const PreviousEvents = () => {
                   </div>
 
                   {/* Right: Agenda */}
-                  <div className="p-6 rounded-xl border border-border/50 bg-card">
+                  <div className="p-6 rounded-xl border border-border/50 bg-card card-shine">
                     <h3 className="font-semibold mb-4 text-lg">Agenda</h3>
                     <ul className="space-y-3">
                       {event.agenda.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                          <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 text-xs font-medium">
+                        <li key={i} className="flex items-start gap-3 text-muted-foreground group/item">
+                          <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 text-xs font-medium group-hover/item:bg-accent group-hover/item:text-accent-foreground transition-colors">
                             {i + 1}
                           </span>
                           <span className="text-sm">{item}</span>
@@ -163,9 +182,15 @@ const PreviousEvents = () => {
                   </div>
                 </div>
 
+                {/* Photo Gallery */}
+                <div className="mb-8">
+                  <h3 className="text-lg font-semibold mb-4">Event Gallery</h3>
+                  <PhotoGallery photos={event.photos} eventName={event.name} />
+                </div>
+
                 {/* Divider */}
                 {index < events.length - 1 && (
-                  <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mt-24" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mt-16" />
                 )}
               </article>
             </AnimatedSection>

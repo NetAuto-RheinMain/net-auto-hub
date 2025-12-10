@@ -113,10 +113,25 @@
   .animation-delay-500 { animation-delay: 0.5s; }
 
   .hover-lift {
-    @apply transition-transform duration-300;
+    @apply transition-all duration-300;
   }
   .hover-lift:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px hsl(var(--background) / 0.3), 0 0 30px hsl(var(--glow) / 0.15);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--glow) / 0.4), 0 0 60px hsl(var(--glow) / 0.2);
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300;
+  }
+  .hover-scale:hover {
+    transform: scale(1.05);
   }
 
   .nav-link {
@@ -139,6 +154,53 @@
     background: 
       radial-gradient(ellipse at 20% 30%, hsl(var(--glow) / 0.08) 0%, transparent 50%),
       radial-gradient(ellipse at 80% 70%, hsl(var(--glow-cyan) / 0.05) 0%, transparent 50%);
+  }
+
+  .photo-strip {
+    @apply flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .photo-strip::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .photo-strip::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 2px;
+  }
+
+  .photo-strip::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground));
+    border-radius: 2px;
+  }
+
+  .icon-bounce {
+    @apply transition-all duration-300;
+  }
+  .icon-bounce:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
+
+  .card-shine {
+    @apply relative overflow-hidden;
+  }
+  .card-shine::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      hsl(var(--foreground) / 0.03) 45%,
+      hsl(var(--foreground) / 0.05) 50%,
+      hsl(var(--foreground) / 0.03) 55%,
+      transparent 60%
+    );
+  }
+  .card-shine:hover::before {
+    @apply opacity-100;
+    animation: shimmer 0.8s ease-out;
   }
 }
 
