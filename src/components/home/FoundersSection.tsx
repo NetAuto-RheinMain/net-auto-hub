@@ -3,20 +3,20 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const founders = [
   {
-    name: "Alex Reiter",
+    name: "Florian Löhden",
     role: "Co-Founder",
-    bio: "Network automation specialist with 10+ years of experience in enterprise infrastructure and open-source contributions.",
-    image: "/placeholder.svg",
-    github: "#",
-    linkedin: "#",
+    bio: "An Aspiring Network automation engineer and a DevOps engineer .",
+    image: "/flo.jpg",
+    github: "https://github.com/floehden",
+    linkedin: "https://www.linkedin.com/in/florian-loehden/",
   },
   {
-    name: "Jordan Chen",
+    name: "Uzma Saman Chanderki",
     role: "Co-Founder",
-    bio: "Software engineer passionate about bridging the gap between traditional networking and modern DevOps practices.",
-    image: "/placeholder.svg",
-    github: "#",
-    linkedin: "#",
+    bio: "As a NetDevOps Engineer, I enjoy working at the crossroads of Networking and DevOps. I use tools like Packer, Terraform, Ansible, Docker, Containerlab, Prometheus, Grafana and Kubernetes to make operations smooth and improve network performance. I have experience with monitoring solutions, network automation tools, and sources of truth like Netbox and Nautobot. I also use Python to automate tasks and boost efficiency.",
+    image: "/uzma.jpeg",
+    github: "https://github.com/NetOpsChic",
+    linkedin: "https://www.linkedin.com/in/uzmasaman",
   },
 ];
 

@@ -7,59 +7,82 @@ const blogs = [
   {
     title: "Network to Code Blog",
     description: "Deep dives into network automation tools, best practices, and real-world implementation guides.",
-    url: "#",
+    url: "https://networktocode.com/blog/",
     image: "/placeholder.svg",
   },
   {
     title: "Packet Pushers",
     description: "Industry insights, podcast episodes, and technical articles on networking and automation.",
-    url: "#",
+    url: "https://packetpushers.net/blog/",
     image: "/placeholder.svg",
   },
   {
     title: "IPSpace.net",
     description: "Ivan Pepelnjak's comprehensive resources on network design and automation.",
-    url: "#",
+    url: "https://blog.ipspace.net/",
     image: "/placeholder.svg",
   },
   {
-    title: "Cisco DevNet Blog",
+    title: "CBT Nuggets Networking Blog",
     description: "Official developer resources and tutorials for network programmability.",
-    url: "#",
+    url: "https://www.cbtnuggets.com/networking/blog",
     image: "/placeholder.svg",
   },
 ];
 
 const courses = [
   {
-    title: "Network Automation Fundamentals",
-    provider: "Cisco DevNet",
-    description: "Start your journey with Python, APIs, and automation basics.",
-    url: "#",
-    image: "/placeholder.svg",
-  },
-  {
-    title: "Ansible for Network Engineers",
-    provider: "Red Hat",
-    description: "Master Ansible for multi-vendor network configuration management.",
-    url: "#",
-    image: "/placeholder.svg",
-  },
-  {
-    title: "Nornir Deep Dive",
+    title: "100-days-of-nautobot",
     provider: "Network to Code",
-    description: "Advanced Python automation with the Nornir framework.",
-    url: "#",
+    description: " This is a self-directed, guided journey for anybody who wants to build a strong and consistent network automation skills using Nautobot",
+    url: "https://github.com/nautobot/100-days-of-nautobot",
+    image: "/placeholder.svg",
+  },
+  {
+    title: "Introduction to Juniper Platform Automation and NetDevOps",
+    provider: "Juniper Networking",
+    description: "This introductory three-day course provides students with the foundational knowledge required to automate Junos using NetDevOps automation tools, protocols, and technologies.",
+    url: "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=EDU-JUN-ILT-IJAUT",
+    image: "/placeholder.svg",
+  },
+  {
+    title: "The Isovalent/cilium labs",
+    provider: "Isovalent",
+    description: "The Isovalent labs are the best set of resources to learn about the leading cloud networking platform Cilium.",
+    url: "https://isovalent.com/learning-tracks/",
     image: "/placeholder.svg",
   },
 ];
 
 const bootcampSkills = [
-  { icon: Code, name: "Python" },
-  { icon: GitBranch, name: "Git" },
-  { icon: Terminal, name: "Ansible" },
-  { icon: Code, name: "RESTCONF" },
+  { icon: Terminal, name: "Linux & Shell" },
+  { icon: GitBranch, name: "Git & Version Control" },
+
+  { icon: Code, name: "Networking Fundamentals" },
+  { icon: Code, name: "IP Addressing & Subnetting" },
+  { icon: Code, name: "Switching & Topologies" },
+
+  { icon: Code, name: "VLANs & STP" },
+  { icon: Code, name: "OSPF & BGP" },
+  { icon: Code, name: "IPv4 Connectivity" },
+
+  { icon: Code, name: "Python for Network Engineers" },
+  { icon: Code, name: "Go Basics" },
+
+  { icon: Terminal, name: "Virtualization & Lab Environments" },
+  { icon: Terminal, name: "Containerization with Docker" },
+
+  { icon: Code, name: "Cloud Networking" },
+
+  { icon: Terminal, name: "Ansible Configuration Management" },
+  { icon: Terminal, name: "Terraform / OpenTofu" },
+
+  { icon: GitBranch, name: "CI/CD Pipelines" },
+
+  { icon: Code, name: "Monitoring & Observability" },
+  { icon: Code, name: "Prometheus & Grafana" },
 ];
+
 
 const Resources = () => {
   return (
@@ -79,7 +102,72 @@ const Resources = () => {
           </AnimatedSection>
         </div>
       </section>
+      {/* Bootcamp Section */}
+      <section className="py-24 section-padding">
+        <div className="max-w-5xl mx-auto">
+          <AnimatedSection>
+            <div className="relative group">
+              {/* Animated glow border */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-glow-cyan/20 to-accent/30 rounded-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+              
+              <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden">
+                <div className="grid lg:grid-cols-2">
+                  {/* Left: Image */}
+{/* Left: Image */}
+<div className="relative aspect-video lg:aspect-auto min-h-[300px] overflow-hidden">
+  {/* Optional overlay for contrast */}
+  <div className="absolute inset-0 bg-black/30 z-10" />
 
+  <img
+    src="bootcamp.png"
+    alt="Network Automation Bootcamp"
+    className="absolute inset-0 w-full h-full object-cover grayscale"
+  />
+</div>
+
+
+                  {/* Right: Content */}
+                  <div className="p-8 lg:p-12">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+                      Network Automation Bootcamp
+                    </h2>
+                    
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Our comprehensive bootcamp takes you from networking fundamentals 
+                      to advanced automation. Learn Python, Git, Ansible, and modern APIs 
+                      through hands-on labs and real-world scenarios.
+                    </p>
+
+                    {/* Skills */}
+                    <div className="flex flex-wrap gap-3 mb-8">
+                      {bootcampSkills.map((skill) => (
+                        <div
+                          key={skill.name}
+                          className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/50 bg-secondary/30"
+                        >
+                          <skill.icon size={16} className="text-accent" />
+                          <span className="text-sm font-medium">{skill.name}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button
+                      size="lg"
+                      className="bg-foreground text-background hover:bg-foreground/90"
+                      asChild
+                    >
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        View Bootcamp GitHub
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* Blogs Section */}
       <section className="pb-24 section-padding">
         <div className="max-w-6xl mx-auto">
@@ -170,74 +258,6 @@ const Resources = () => {
               </AnimatedSection>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Bootcamp Section */}
-      <section className="py-24 section-padding">
-        <div className="max-w-5xl mx-auto">
-          <AnimatedSection>
-            <div className="relative group">
-              {/* Animated glow border */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-glow-cyan/20 to-accent/30 rounded-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
-              
-              <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden">
-                <div className="grid lg:grid-cols-2">
-                  {/* Left: Image */}
-                  <div className="relative aspect-video lg:aspect-auto min-h-[300px]">
-                    <div className="absolute inset-0 mesh-gradient" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-6xl font-bold tracking-tighter mb-2 opacity-20">
-                          BOOTCAMP
-                        </div>
-                        <div className="text-lg text-muted-foreground">
-                          Network Automation
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Right: Content */}
-                  <div className="p-8 lg:p-12">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                      Network Automation Bootcamp
-                    </h2>
-                    
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      Our comprehensive bootcamp takes you from networking fundamentals 
-                      to advanced automation. Learn Python, Git, Ansible, and modern APIs 
-                      through hands-on labs and real-world scenarios.
-                    </p>
-
-                    {/* Skills */}
-                    <div className="flex flex-wrap gap-3 mb-8">
-                      {bootcampSkills.map((skill) => (
-                        <div
-                          key={skill.name}
-                          className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/50 bg-secondary/30"
-                        >
-                          <skill.icon size={16} className="text-accent" />
-                          <span className="text-sm font-medium">{skill.name}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <Button
-                      size="lg"
-                      className="bg-foreground text-background hover:bg-foreground/90"
-                      asChild
-                    >
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                        View Bootcamp GitHub
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
     </Layout>

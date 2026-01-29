@@ -43,7 +43,8 @@ export function CallForPapersSection() {
                 className="bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all duration-300"
                 asChild
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSzCZdxdnUiCBNiH8aO8DEdLLewFj040S5lyqoKd6-yBMW4A/viewform
+" target="_blank" rel="noopener noreferrer">
                   <Send className="w-4 h-4 mr-2" />
                   Submit via Google Form
                 </a>

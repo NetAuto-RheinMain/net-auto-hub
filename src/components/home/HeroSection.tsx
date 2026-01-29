@@ -59,26 +59,23 @@ export function HeroSection() {
           </div>
         </AnimatedSection>
 
-        {/* Logo Placeholder */}
-        <AnimatedSection delay={50}>
-          <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 animate-glow-pulse rounded-2xl">
-            <div className="absolute inset-0 rounded-2xl border border-foreground/20 bg-secondary/30 backdrop-blur-sm flex items-center justify-center overflow-hidden group hover-scale">
-              {/* Placeholder icon - replace with actual logo */}
-              <div className="text-5xl md:text-6xl font-bold tracking-tighter text-foreground/90">
-                NA
-              </div>
-              {/* Shine effect */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/5 to-transparent animate-shimmer" />
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
+{/* Logo */}
+<AnimatedSection delay={50}>
+  <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
+    <img
+      src="/netauto.png"
+      alt="NetAuto Group Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</AnimatedSection>
 
         <AnimatedSection delay={100}>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6">
-            Net<span className="text-accent">Auto</span>
-          </h1>
+<h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6">
+  Net<span className="text-accent">Auto</span>{" "}
+  <span>Group</span>
+</h1>
+
         </AnimatedSection>
 
         <AnimatedSection delay={200}>

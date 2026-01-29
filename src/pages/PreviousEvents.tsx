@@ -8,57 +8,104 @@ const events = [
   {
     id: 1,
     name: "NetAuto Episode 1",
-    date: "September 2024",
-    location: "Berlin, Germany",
-    description: "Our inaugural event brought together network automation pioneers for an intensive day of knowledge sharing. From fundamentals to advanced topics, Episode 1 set the foundation for the NetAuto community.",
-    image: "/placeholder.svg",
+    date: "September 4 2024",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "Our inaugural event brought together network automation enthusiasts for an intensive evening of knowledge sharing. From fundamentals to advanced topics, Episode 1 set the foundation for the NetAuto community.",
+    image: "/epi-1/cover.jpeg",
     photos: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
+      "/epi-1/2.jpeg",
+      "/epi-1/3.jpeg",
+      "/epi-1/4.jpeg",
+      "/epi-1/5.jpeg",
     ],
     agenda: [
-      "Welcome & Community Introduction",
-      "Network Automation 101: Getting Started",
-      "Ansible for Network Engineers",
-      "Python Scripting Best Practices",
-      "Live Demo: Automating VLAN Configuration",
-      "Networking Reception",
+      "Networking with drinks and pizza",
+      "Introduction to the group",
+      "Introduction to network automation by Florian Löhden",
+      "Discussion: What does network automation mean to you?",
+      "Custom Ansible library for Nokia SR Linux by Uzma Saman Chanderki",
+      "Networking",
     ],
-    githubLink: "#",
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/tree/main/episode1",
     photosLink: "#",
   },
   {
     id: 2,
-    name: "NetAutoBofest 2025",
-    date: "January 2025",
-    location: "Vienna, Austria",
-    description: "A special winter edition focusing on Birds of a Feather sessions. Attendees participated in open discussions, unconference-style sessions, and collaborative problem-solving workshops.",
-    image: "/placeholder.svg",
+    name: "NetAutoberfest 2025",
+    date: "October 2 2025",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "A special halloween-Hachtoberfest edition focusing on Network Automation open source toolinh. Attendees participated in open discussions, unconference-style sessions, and collaborative problem-solving workshops.",
+    image: "/epi-2/cover.jpeg",
     photos: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
+      "/epi-2/1.jpeg",
+      "/epi-2/2.jpeg",
+      "/epi-2/3.jpeg",
+      "/epi-2/4.jpeg",
+      "/epi-2/6.jpeg",
     ],
     agenda: [
-      "Opening Keynote: State of Network Automation",
-      "BoF Session: Infrastructure as Code Challenges",
-      "BoF Session: Multi-vendor Automation Strategies",
-      "Workshop: Nornir Deep Dive",
-      "Panel: The Future of NetDevOps",
-      "Community Dinner & Awards",
+      "Arrival, networking, and food (17:00 CEST)",
+      "Opening remarks and hackathon introduction (18:00 CEST)",
+      "Hackathon kickoff and technical talks (around 18:15 CEST)",
+      "Scheduled breaks and informal networking",
+      "Event conclusion around 21:00 CEST",
     ],
-    githubLink: "#",
+
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/tree/main/episode2-netautoberfest",
     photosLink: "#",
   },
   {
     id: 3,
     name: "NetAuto Episode 3",
-    date: "February 2025",
-    location: "Zurich, Switzerland",
-    description: "Episode 3 pushed boundaries with advanced topics including AI-assisted network operations, intent-based networking, and zero-trust automation patterns.",
+    date: "November 6 2025",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "Episode 3 pushed boundaries with advanced topics including Hachkathon discussion, teaching and learning from previous event and some a talk Red hat ansible platform.",
+    image: "/epi-3/cover.jpeg",
+    photos: [
+      "/epi-3/1.jpeg",
+      "/epi-3/3.jpeg",
+      "/epi-3/4.jpeg",
+    ],
+    agenda: [
+      "Hackathon recap covering ideas, learnings, and challenges",
+      "Live demo of the Red Hat Ansible Automation Platform by Ralph John",
+      "Engaging conversations, networking, and a welcoming atmosphere",
+    ],
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/tree/main/episode4",
+    photosLink: "#",
+  },
+  {
+    id: 4,
+    name: "NetAuto Episode 4",
+    date: "December 11 2025",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "Episode 4 focused on scaling network automation in production environments, observability, and real-world NetDevOps operating models.",
+    image: "/epi-4/cover.jpeg",
+    photos: [
+      "/epi-4/1.jpeg",
+      "/epi-4/2.jpeg",
+      "/epi-4/3.jpeg",
+    ],
+    agenda: [
+      "Get together and pizza (18:30)",
+      "Talk 1: Open discussion on IPv6 (19:00)",
+      "Short break",
+      "Talk 2: NetDevOps with GNS3 driven by Terraform",
+    ],
+    githubLink: "#",
+    photosLink: "#",
+  },
+  {
+    id: 5,
+    name: "NetAuto Episode 5",
+    date: "February 6 2025",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "Episode 5 delivered deep dives into platform engineering for networks, Terraform-driven automation, and multi-domain orchestration.",
     image: "/placeholder.svg",
     photos: [
       "/placeholder.svg",
@@ -67,12 +114,12 @@ const events = [
       "/placeholder.svg",
     ],
     agenda: [
-      "AI/ML in Network Operations",
-      "Intent-Based Networking Deep Dive",
-      "Zero-Trust Architecture Automation",
-      "Workshop: Building Custom NAPALM Drivers",
-      "Case Study: Enterprise-Scale Automation",
-      "Lightning Talks & Closing",
+      "Keynote: The Rise of Network Platform Engineering",
+      "Terraform for Network Automation",
+      "Multi-Domain Orchestration Strategies",
+      "Workshop: Building Internal Network Platforms",
+      "Panel: NetDevOps Maturity Models",
+      "Closing & Community Reception",
     ],
     githubLink: "#",
     photosLink: "#",
@@ -101,7 +148,9 @@ const PreviousEvents = () => {
       {/* Events List */}
       <section className="pb-32 section-padding">
         <div className="max-w-6xl mx-auto space-y-32">
-          {events.map((event, index) => (
+          {[...events]
+          .sort((a, b) => b.id - a.id)
+          .map((event, index) => (
             <AnimatedSection key={event.id} delay={index * 100}>
               <article className="group">
                 {/* Event Header Image */}
@@ -151,16 +200,6 @@ const PreviousEvents = () => {
                         <a href={event.githubLink} target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           View Presentations
-                        </a>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        className="border-foreground/30 hover:bg-foreground/10 hover:scale-105 transition-all duration-300"
-                        asChild
-                      >
-                        <a href={event.photosLink} target="_blank" rel="noopener noreferrer">
-                          <Image className="w-4 h-4 mr-2" />
-                          Event Photos
                         </a>
                       </Button>
                     </div>

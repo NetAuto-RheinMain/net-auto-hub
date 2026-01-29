@@ -51,7 +51,7 @@ export function Header() {
             to="/" 
             className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
           >
-            NetAuto
+            NetAuto Group
           </Link>
 
           {/* Desktop Navigation */}

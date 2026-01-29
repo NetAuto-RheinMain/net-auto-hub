@@ -1,9 +1,9 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const sponsor = {
-  name: "TechCorp",
-  logo: "/placeholder.svg",
-  description: "Leading provider of enterprise networking solutions. Proud to support the NetAuto community in advancing network automation innovation.",
+  name: "Logicalis GmbH",
+  logo: "/logicalis.svg",
+  description: "We are Architects of Change.",
 };
 
 export function SponsorsSection() {
