@@ -33,6 +33,14 @@
     content="Network automation community, events, and hands-on learning."
   />
   <meta name="twitter:image" content="/logo.png" />
+  <script>
+  const redirect = sessionStorage.redirect;
+  if (redirect) {
+    delete sessionStorage.redirect;
+    history.replaceState(null, null, redirect.replace(location.origin, ""));
+  }
+</script>
+
   <script type="module" crossorigin src="/net-auto-hub/assets/index-jp5gtCxX.js"></script>
   <link rel="stylesheet" crossorigin href="/net-auto-hub/assets/index-LYgIu-S0.css">
 </head>
