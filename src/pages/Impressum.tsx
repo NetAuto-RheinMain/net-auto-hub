@@ -84,7 +84,7 @@ const Impressum = () => {
                   Email:{""}
                   <a 
                     href="netautorheinmain@gmail.com" 
-                    className="text-black underline underline-offset-4 hover:no-underline"
+                    className="text-blue-400 underline underline-offset-4 hover:no-underline"
                   >
                     netautorheinmain@gmail.com
                   </a>
