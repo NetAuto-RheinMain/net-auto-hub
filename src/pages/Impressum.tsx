@@ -67,8 +67,8 @@ const Impressum = () => {
                 Address
               </h2>
               <div className="text-white leading-relaxed space-y-1">
-                <p>Example Street 123</p>
-                <p>12345 Munich</p>
+                <p>Heimstättenweg 89</p>
+                <p>64295 Darmstadt</p>
                 <p>Germany</p>
               </div>
             </section>
@@ -86,7 +86,7 @@ const Impressum = () => {
                     href="mailto:hello@netauto.community" 
                     className="text-black underline underline-offset-4 hover:no-underline"
                   >
-                    hello@netauto.community
+                    netautorheinmain@gmail.com
                   </a>
                 </p>
               </div>
