@@ -37,18 +37,18 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Visual */}
           <AnimatedSection>
-  <div className="relative aspect-square max-w-md mx-auto">
-    <div className="absolute inset-0 rounded-2xl border border-border/50 overflow-hidden bg-secondary/20">
+            <div className="relative aspect-square max-w-md mx-auto">
+              <div className="absolute inset-0 rounded-2xl border border-border/50 overflow-hidden bg-secondary/20">
 
-      <img
-        src="/netauto.png"
-        alt="NetAuto Group Logo"
-        className="absolute inset-0 w-full h-full object-contain"
-      />
+                <img
+                  src="/netauto.png"
+                  alt="NetAuto Group Logo"
+                  className="absolute inset-0 w-full h-full object-contain"
+                />
 
-    </div>
-  </div>
-</AnimatedSection>
+              </div>
+            </div>
+          </AnimatedSection>
 
 
           {/* Right: Content */}

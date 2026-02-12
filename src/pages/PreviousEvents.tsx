@@ -96,7 +96,7 @@ const events = [
       "Short break",
       "Talk 2: NetDevOps with GNS3 driven by Terraform",
     ],
-    githubLink: "#",
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/tree/main/episode4",
     photosLink: "#",
   },
   {
@@ -105,7 +105,7 @@ const events = [
     date: "February 6 2025",
     location: "Neu-Isenberg, Hesse, Germany",
     description:
-      "Episode 5 delivered deep dives into kubernetes as Pyhsical device orchestratior and NAF Framework.",
+      "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
     image: "/epi-5/1.jpeg",
     photos: [
       "/epi-5/1.jpeg",
@@ -114,8 +114,8 @@ const events = [
       "/epi-5/4.jpeg",
     ],
     agenda: [
-      "Get together and pizza (18:30)",
-      "Talk 1: SDN for PNF and VNF(19:00)",
+      "Get together and pizza (18:00)",
+      "Talk 1: Kubernetes as Physical Device Orchestration (19:00)",
       "Short break",
       "Talk 2: NAF framework by NAF",
     ],

@@ -5,18 +5,17 @@ import { useState } from "react";
 import { RegisterInterestDialog } from "@/components/forms/RegisterInterestDialog";
 
 const upcomingEvent = {
-  name: "NetAuto Episode 5",
-  date: "February 5, 2026",
-  time: "18:00 - 91:00 CET",
+  name: "NetAuto Episode 6",
+  date: "April 9, 2026",
+  time: "18:00 - 21:00 CET",
   location: "Neu-Isenberg, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
+  registrationLink: "https://forms.gle/GxCp5CSYGMsMABCM8",
   agenda: [
-    "Keynote: The Future of Network Automation",
-    "Workshop: GitOps for Network Engineers",
-    "Panel: AI/ML in Network Operations",
-    "Demo: Zero-Touch Provisioning at Scale",
-    "Networking & Community Mixer",
+    "Get together and networking",
+    "Talk 1: 'Network Test Automation' by Sandro Vincenti",
+    "more talks to be announced soon...",
   ],
 };
 
@@ -96,17 +95,19 @@ export function UpcomingEventSection() {
 
                   {/* Buttons */}
                   <div className="flex flex-wrap gap-3">
+                    {/* 
                     <Button
                       variant="outline"
                       className="border-foreground/30 hover:bg-foreground/10"
                     >
                       Download Full Agenda
                     </Button>
-                    <Button 
-                      onClick={() => setIsDialogOpen(true)}
-                      className="bg-foreground text-background hover:bg-foreground/90"
-                    >
-                      Register Interest
+                    onClick={() => setIsDialogOpen(true)} 
+                    */}
+                    <Button className="bg-foreground text-background hover:bg-foreground/90">
+                      <a href={upcomingEvent.registrationLink} target="_blank" rel="noopener noreferrer">
+                      Register 
+                      </a>
                     </Button>
                   </div>
                 </div>

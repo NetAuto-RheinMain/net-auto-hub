@@ -113,17 +113,16 @@ const Resources = () => {
               <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden">
                 <div className="grid lg:grid-cols-2">
                   {/* Left: Image */}
-{/* Left: Image */}
-<div className="relative aspect-video lg:aspect-auto min-h-[300px] overflow-hidden">
-  {/* Optional overlay for contrast */}
-  <div className="absolute inset-0 bg-black/30 z-10" />
+                  <div className="relative aspect-video lg:aspect-auto min-h-[300px] overflow-hidden">
+                    {/* Optional overlay for contrast */}
+                    <div className="absolute inset-0 bg-black/30 z-10" />
 
-  <img
-    src="bootcamp.png"
-    alt="Network Automation Bootcamp"
-    className="absolute inset-0 w-full h-full object-cover grayscale"
-  />
-</div>
+                    <img
+                      src="bootcamp.png"
+                      alt="Network Automation Bootcamp"
+                      className="absolute inset-0 w-full h-full object-cover grayscale"
+                    />
+                  </div>
 
 
                   {/* Right: Content */}
