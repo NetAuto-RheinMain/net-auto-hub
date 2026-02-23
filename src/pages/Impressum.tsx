@@ -38,7 +38,7 @@ const Impressum = () => {
               </h2>
               <div className="text-gray-600 leading-relaxed space-y-1">
                 <p>NetAuto Community Initiative</p>
-                <p>c/o Florian Löhden & Uzma Saman</p>
+                <p>c/o Florian Löhden & Uzma Saman Chanderki</p>
               </div>
             </section>
           </AnimatedSection>
@@ -81,10 +81,10 @@ const Impressum = () => {
               </h2>
               <div className="text-gray-600 leading-relaxed space-y-1">
                 <p>
-                  Email:{" "}
+                  Email:{""}
                   <a 
-                    href="mailto:hello@netauto.community" 
-                    className="text-black underline underline-offset-4 hover:no-underline"
+                    href="netautorheinmain@gmail.com" 
+                    className="text-blue-400 underline underline-offset-4 hover:no-underline"
                   >
                     netautorheinmain@gmail.com
                   </a>

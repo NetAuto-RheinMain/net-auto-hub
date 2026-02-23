@@ -5,7 +5,7 @@ const founders = [
   {
     name: "Florian Löhden",
     role: "Co-Founder",
-    bio: "An Aspiring Network automation engineer and a DevOps engineer .",
+    bio: "Software Engineer turned DevOps practitioner with a focus on Network Automation. I advocate for treating network infrastructure with the same automation rigor as software. Proficient in Go, Python, Ansible, and Kubernetes.",
     image: "/flo.jpg",
     github: "https://github.com/floehden",
     linkedin: "https://www.linkedin.com/in/florian-loehden/",
