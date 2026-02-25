@@ -9,14 +9,10 @@ const Impressum = () => {
     <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
         <div className="px-6 md:px-10 lg:px-20">
           <nav className="flex items-center justify-between h-20">
-<Link to="/" className="text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity">
+            <Link to="/" className="text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity">
               NetAuto
             </Link>
-<Link 
-  to="/" 
-  className="text-sm text-gray-400 hover:text-white transition-colors"
->
-
+            <Link to="/" className="text-sm text-gray-400 hover:text-white transition-colors">
               ← Back to Home
             </Link>
           </nav>
@@ -34,11 +30,11 @@ const Impressum = () => {
           <AnimatedSection delay={100}>
             <section className="mb-12">
               <h2 className="text-xl font-semibold mb-4 text-white">
-                Information according to § 5 TMG
+                Information according to <a href="https://www.gesetze-im-internet.de/ddg/__5.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">§5 DDG</a>
               </h2>
               <div className="text-gray-600 leading-relaxed space-y-1">
-                <p>NetAuto Community Initiative</p>
-                <p>c/o Florian Löhden & Uzma Saman Chanderki</p>
+                <p>NetAuto Group</p>
+                <p>c/o Florian Loehden & Uzma Saman Chanderki</p>
               </div>
             </section>
           </AnimatedSection>
@@ -84,8 +80,7 @@ const Impressum = () => {
                   Email:{""}
                   <a 
                     href="netautorheinmain@gmail.com" 
-                    className="text-blue-400 underline underline-offset-4 hover:no-underline"
-                  >
+                    className="text-blue-400 underline underline-offset-4 hover:no-underline">
                     netautorheinmain@gmail.com
                   </a>
                 </p>
