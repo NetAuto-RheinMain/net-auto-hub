@@ -119,7 +119,7 @@ const events = [
       "Short break",
       "Talk 2: NAF framework by NAF",
     ],
-    githubLink: "#",
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/",
     photosLink: "#",
   },
 ];
