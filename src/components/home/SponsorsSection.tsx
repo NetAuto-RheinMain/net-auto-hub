@@ -52,7 +52,7 @@ export function SponsorsSection() {
             Interested in sponsoring NetAuto?
           </p>
           <a
-            href="mailto:netautorheinmain@gmail.com" target="_blank"
+            href="mailto:netautorheinmain@gmail.com" 
             className="inline-flex items-center gap-2 text-accent hover:text-foreground transition-colors underline underline-offset-4 hover-scale">
             Get in touch →
           </a>
