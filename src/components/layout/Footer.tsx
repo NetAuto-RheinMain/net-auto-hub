@@ -9,9 +9,16 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { href: "#", icon: Github, label: "GitHub" },
-  { href: "#", icon: Linkedin, label: "LinkedIn" },
-  { href: "#", icon: Twitter, label: "Twitter" },
+  { 
+    href: "https://github.com/NetAuto-RheinMain", 
+    icon: Github, 
+    label: "GitHub" 
+  },
+  { 
+    href: "https://www.linkedin.com/company/netauto-group-rheinmain", 
+    icon: Linkedin, 
+    label: "LinkedIn" 
+  },
 ];
 
 export function Footer() {
