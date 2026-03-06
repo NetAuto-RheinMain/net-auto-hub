@@ -8,25 +8,25 @@ const blogs = [
     title: "Network to Code Blog",
     description: "Deep dives into network automation tools, best practices, and real-world implementation guides.",
     url: "https://networktocode.com/blog/",
-    image: "/placeholder.svg",
+    image: "/thumbnails/network-to-code.png",
   },
   {
     title: "Packet Pushers",
     description: "Industry insights, podcast episodes, and technical articles on networking and automation.",
     url: "https://packetpushers.net/blog/",
-    image: "/placeholder.svg",
+    image: "/thumbnails/packet-pusher.png",
   },
   {
     title: "IPSpace.net",
     description: "Ivan Pepelnjak's comprehensive resources on network design and automation.",
     url: "https://blog.ipspace.net/",
-    image: "/placeholder.svg",
+    image: "/thumbnails/ipsec.png",
   },
   {
     title: "CBT Nuggets Networking Blog",
     description: "Official developer resources and tutorials for network programmability.",
     url: "https://www.cbtnuggets.com/networking/blog",
-    image: "/placeholder.svg",
+    image: "/thumbnails/cbt.png",
   },
 ];
 
@@ -36,21 +36,21 @@ const courses = [
     provider: "Network to Code",
     description: " This is a self-directed, guided journey for anybody who wants to build a strong and consistent network automation skills using Nautobot",
     url: "https://github.com/nautobot/100-days-of-nautobot",
-    image: "/placeholder.svg",
+    image: "/thumbnails/100-days.png",
   },
   {
     title: "Introduction to Juniper Platform Automation and NetDevOps",
     provider: "Juniper Networking",
     description: "This introductory three-day course provides students with the foundational knowledge required to automate Junos using NetDevOps automation tools, protocols, and technologies.",
     url: "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=EDU-JUN-ILT-IJAUT",
-    image: "/placeholder.svg",
+    image: "/thumbnails/juniper.png",
   },
   {
     title: "The Isovalent/cilium labs",
     provider: "Isovalent",
     description: "The Isovalent labs are the best set of resources to learn about the leading cloud networking platform Cilium.",
     url: "https://isovalent.com/learning-tracks/",
-    image: "/placeholder.svg",
+    image: "/thumbnails/cilium.png",
   },
 ];
 
