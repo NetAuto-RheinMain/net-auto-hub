@@ -5,16 +5,17 @@ import { useState } from "react";
 import { RegisterInterestDialog } from "@/components/forms/RegisterInterestDialog";
 
 const upcomingEvent = {
-  name: "NetAuto Episode 7",
+  name: "NetAuto Episode 6",
   date: "June 18, 2026",
   time: "18:00 - 21:00 CET",
   location: "Neu-Isenberg, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
-  registrationLink: "https://forms.gle/Kv1JpRRm8F24FPJx6",
+  registrationLink: "https://forms.gle/Hf1roHH6phSaXvcg7",
   agenda: [
     "Get together and networking",
     "Talk 1: 'Network Test Automation' by Sandro Vincenti",
+    "Talk 2: 'tba' by Saeed Ali",
     "more talks to be announced soon...",
   ],
 };
