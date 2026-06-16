@@ -8,15 +8,14 @@ const upcomingEvent = {
   name: "NetAuto Episode 6",
   date: "June 18, 2026",
   time: "18:00 - 21:00 CET",
-  location: "Neu-Isenberg, Germany",
-  description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
+  location: "<a href="https://maps.app.goo.gl/EVBCuwzdEoS1GuUv9" target="_blank" rel="noopener noreferrer">Siemensstraße 10, 63263 Neu-Isenburg, Germany</a>",    
+    description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
   registrationLink: "https://forms.gle/Hf1roHH6phSaXvcg7",
   agenda: [
     "Get together and networking",
     "Talk 1: 'Network Test Automation' by Sandro Vincenti",
-    "Talk 2: 'tba' by Saeed Ali",
-    "more talks to be announced soon...",
+    "Talk 2: 'Network Automation & Digital Twin Lab (YANG, NETCONF, Ansible)' by Saeed Ali",
   ],
 };
 
@@ -39,7 +38,7 @@ export function UpcomingEventSection() {
           <div className="relative group">
             {/* Glow effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 via-transparent to-glow-cyan/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
-            
+
             <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden group-hover:border-foreground/20 transition-all duration-300">
               <div className="grid lg:grid-cols-2">
                 {/* Image */}
@@ -107,7 +106,7 @@ export function UpcomingEventSection() {
                     */}
                     <Button className="bg-foreground text-background hover:bg-foreground/90">
                       <a href={upcomingEvent.registrationLink} target="_blank" rel="noopener noreferrer">
-                      Register 
+                        Register
                       </a>
                     </Button>
                   </div>
@@ -118,8 +117,8 @@ export function UpcomingEventSection() {
         </AnimatedSection>
       </div>
 
-      <RegisterInterestDialog 
-        open={isDialogOpen} 
+      <RegisterInterestDialog
+        open={isDialogOpen}
         onOpenChange={setIsDialogOpen}
         eventName={upcomingEvent.name}
       />
