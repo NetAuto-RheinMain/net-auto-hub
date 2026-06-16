@@ -8,7 +8,7 @@ const upcomingEvent = {
   name: "NetAuto Episode 6",
   date: "June 18, 2026",
   time: "18:00 - 21:00 CET",
-  location: "<a href=\"https://maps.app.goo.gl/dMx2NTuGqM1D5ZFZ7\" target=\"_blank\" rel=\"noopener noreferrer\">Siemensstraße 10, 63263 Neu-Isenburg, Germany</a>",
+  location: "Siemensstraße 10, 63263 Neu-Isenburg, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
   registrationLink: "https://forms.gle/Hf1roHH6phSaXvcg7",
