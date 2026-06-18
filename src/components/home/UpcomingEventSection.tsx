@@ -8,7 +8,7 @@ const upcomingEvent = {
   name: "NetAuto Episode 6",
   date: "June 18, 2026",
   time: "18:00 - 21:00 CET",
-  location: "Siemensstraße 10, 63263 Neu-Isenburg, Germany",
+  location: "Logicalis GmbH, Siemensstraße 10, 63263 Neu-Isenburg, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
   registrationLink: "https://forms.gle/Hf1roHH6phSaXvcg7",
