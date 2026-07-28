@@ -5,17 +5,16 @@ import { useState } from "react";
 import { RegisterInterestDialog } from "@/components/forms/RegisterInterestDialog";
 
 const upcomingEvent = {
-  name: "NetAuto Episode 6",
-  date: "June 18, 2026",
+  name: "NetAuto Episode 7",
+  date: "August 27, 2026",
   time: "18:00 - 21:00 CET",
-  location: "Logicalis GmbH, Siemensstraße 10, 63263 Neu-Isenburg, Germany",
+  location: "Brunnenweg 19, 64331 Weiterstadt, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
   image: "netauto-banner.jpg",
-  registrationLink: "https://forms.gle/Hf1roHH6phSaXvcg7",
+  registrationLink: "https://forms.gle/HMmbu7yhJgZj1DYG6",
   agenda: [
-    "Get together and networking",
-    "Talk 1: 'Network Test Automation' by Sandro Vincenti",
-    "Talk 2: 'Network Automation & Digital Twin Lab (YANG, NETCONF, Ansible)' by Saeed Ali",
+    "Discussion about AI in networks",
+    "BBQ and drinks",
   ],
 };
 

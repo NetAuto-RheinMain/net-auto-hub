@@ -102,7 +102,7 @@ const events = [
   {
     id: 5,
     name: "NetAuto Episode 5",
-    date: "February 6 2025",
+    date: "February 6 2026",
     location: "Neu-Isenberg, Hesse, Germany",
     description:
       "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
@@ -118,6 +118,24 @@ const events = [
       "Talk 1: Kubernetes as Physical Device Orchestration (19:00)",
       "Short break",
       "Talk 2: NAF framework by NAF",
+    ],
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/",
+    photosLink: "#",
+  },
+  {
+    id: 6,
+    name: "NetAuto Episode 6",
+    date: "June 18 2026",
+    location: "Neu-Isenberg, Hesse, Germany",
+    description:
+      "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
+    image: "/epi-5/1.jpeg",
+    photos: [],
+    agenda: [
+      "Get together and pizza (18:00)",
+      "Talk 1: 'Network Test Automation' by Sandro Vincenti",
+      "Short break",
+      "Talk 2: 'Network Automation & Digital Twin Lab (YANG, NETCONF, Ansible)' by Saeed Ali",
     ],
     githubLink: "https://github.com/NetAuto-RheinMain/event-slides/",
     photosLink: "#",
@@ -147,91 +165,91 @@ const PreviousEvents = () => {
       <section className="pb-32 section-padding">
         <div className="max-w-6xl mx-auto space-y-32">
           {[...events]
-          .sort((a, b) => b.id - a.id)
-          .map((event, index) => (
-            <AnimatedSection key={event.id} delay={index * 100}>
-              <article className="group">
-                {/* Event Header Image */}
-                <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 border border-border/50 hover-lift">
-                  <img
-                    src={event.image}
-                    alt={event.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-                  
-                  {/* Event badge */}
-                  <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 text-sm font-medium">
-                    Episode {event.id}
-                  </div>
-                </div>
+            .sort((a, b) => b.id - a.id)
+            .map((event, index) => (
+              <AnimatedSection key={event.id} delay={index * 100}>
+                <article className="group">
+                  {/* Event Header Image */}
+                  <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 border border-border/50 hover-lift">
+                    <img
+                      src={event.image}
+                      alt={event.name}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
 
-                {/* Event Content */}
-                <div className="grid lg:grid-cols-2 gap-8 mb-10">
-                  {/* Left: Info */}
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                      {event.name}
-                    </h2>
-                    
-                    <div className="flex flex-wrap gap-4 mb-6 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Calendar size={16} className="text-accent" />
-                        {event.date}
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin size={16} className="text-accent" />
-                        {event.location}
-                      </div>
-                    </div>
-
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      {event.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-3">
-                      <Button
-                        variant="outline"
-                        className="border-foreground/30 hover:bg-foreground/10 hover:scale-105 transition-all duration-300"
-                        asChild
-                      >
-                        <a href={event.githubLink} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" />
-                          View Presentations
-                        </a>
-                      </Button>
+                    {/* Event badge */}
+                    <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 text-sm font-medium">
+                      Episode {event.id}
                     </div>
                   </div>
 
-                  {/* Right: Agenda */}
-                  <div className="p-6 rounded-xl border border-border/50 bg-card card-shine">
-                    <h3 className="font-semibold mb-4 text-lg">Agenda</h3>
-                    <ul className="space-y-3">
-                      {event.agenda.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3 text-muted-foreground group/item">
-                          <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 text-xs font-medium group-hover/item:bg-accent group-hover/item:text-accent-foreground transition-colors">
-                            {i + 1}
-                          </span>
-                          <span className="text-sm">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Event Content */}
+                  <div className="grid lg:grid-cols-2 gap-8 mb-10">
+                    {/* Left: Info */}
+                    <div>
+                      <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+                        {event.name}
+                      </h2>
+
+                      <div className="flex flex-wrap gap-4 mb-6 text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <Calendar size={16} className="text-accent" />
+                          {event.date}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin size={16} className="text-accent" />
+                          {event.location}
+                        </div>
+                      </div>
+
+                      <p className="text-muted-foreground leading-relaxed mb-6">
+                        {event.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-3">
+                        <Button
+                          variant="outline"
+                          className="border-foreground/30 hover:bg-foreground/10 hover:scale-105 transition-all duration-300"
+                          asChild
+                        >
+                          <a href={event.githubLink} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4 mr-2" />
+                            View Presentations
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+
+                    {/* Right: Agenda */}
+                    <div className="p-6 rounded-xl border border-border/50 bg-card card-shine">
+                      <h3 className="font-semibold mb-4 text-lg">Agenda</h3>
+                      <ul className="space-y-3">
+                        {event.agenda.map((item, i) => (
+                          <li key={i} className="flex items-start gap-3 text-muted-foreground group/item">
+                            <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 text-xs font-medium group-hover/item:bg-accent group-hover/item:text-accent-foreground transition-colors">
+                              {i + 1}
+                            </span>
+                            <span className="text-sm">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                {/* Photo Gallery */}
-                <div className="mb-8">
-                  <h3 className="text-lg font-semibold mb-4">Event Gallery</h3>
-                  <PhotoGallery photos={event.photos} eventName={event.name} />
-                </div>
+                  {/* Photo Gallery */}
+                  <div className="mb-8">
+                    <h3 className="text-lg font-semibold mb-4">Event Gallery</h3>
+                    <PhotoGallery photos={event.photos} eventName={event.name} />
+                  </div>
 
-                {/* Divider */}
-                {index < events.length - 1 && (
-                  <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mt-16" />
-                )}
-              </article>
-            </AnimatedSection>
-          ))}
+                  {/* Divider */}
+                  {index < events.length - 1 && (
+                    <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mt-16" />
+                  )}
+                </article>
+              </AnimatedSection>
+            ))}
         </div>
       </section>
     </Layout>
