@@ -10,7 +10,7 @@ const upcomingEvent = {
   time: "18:00 - 21:00 CET",
   location: "Brunnenweg 19, 64331 Weiterstadt, Germany",
   description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
-  image: "netauto-banner.jpg",
+  image: "netauto-bbq.png",
   registrationLink: "https://forms.gle/HMmbu7yhJgZj1DYG6",
   agenda: [
     "Discussion about AI in networks",
