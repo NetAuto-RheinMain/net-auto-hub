@@ -8,8 +8,8 @@ const events = [
   {
     id: 1,
     name: "NetAuto Episode 1",
-    date: "September 4 2024",
-    location: "Neu-Isenberg, Hesse, Germany",
+    date: "September 4 2025",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Our inaugural event brought together network automation enthusiasts for an intensive evening of knowledge sharing. From fundamentals to advanced topics, Episode 1 set the foundation for the NetAuto community.",
     image: "/epi-1/cover.jpeg",
@@ -34,7 +34,7 @@ const events = [
     id: 2,
     name: "NetAutoberfest 2025",
     date: "October 2 2025",
-    location: "Neu-Isenberg, Hesse, Germany",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "A special halloween-Hachtoberfest edition focusing on Network Automation open source toolinh. Attendees participated in open discussions, unconference-style sessions, and collaborative problem-solving workshops.",
     image: "/epi-2/cover.jpeg",
@@ -60,7 +60,7 @@ const events = [
     id: 3,
     name: "NetAuto Episode 3",
     date: "November 6 2025",
-    location: "Neu-Isenberg, Hesse, Germany",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Episode 3 pushed boundaries with advanced topics including Hachkathon discussion, teaching and learning from previous event and some a talk Red hat ansible platform.",
     image: "/epi-3/cover.jpeg",
@@ -81,7 +81,7 @@ const events = [
     id: 4,
     name: "NetAuto Episode 4",
     date: "December 11 2025",
-    location: "Neu-Isenberg, Hesse, Germany",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Episode 4 focused on scaling network automation in production environments, observability, and real-world NetDevOps operating models.",
     image: "/epi-4/cover.jpeg",
@@ -103,7 +103,7 @@ const events = [
     id: 5,
     name: "NetAuto Episode 5",
     date: "February 6 2026",
-    location: "Neu-Isenberg, Hesse, Germany",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
     image: "/epi-5/1.jpeg",
@@ -126,7 +126,7 @@ const events = [
     id: 6,
     name: "NetAuto Episode 6",
     date: "June 18 2026",
-    location: "Neu-Isenberg, Hesse, Germany",
+    location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
     image: "/epi-5/1.jpeg",
@@ -140,6 +140,18 @@ const events = [
     githubLink: "https://github.com/NetAuto-RheinMain/event-slides/",
     photosLink: "#",
   },
+  {
+    id: 7,
+    name: "NetAuto Episode 7",
+    date: "August 27, 2026",
+    location: "Weiterstadt, Hesse, Germany",
+    description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
+    photos: [],
+    registrationLink: "https://forms.gle/HMmbu7yhJgZj1DYG6",
+    agenda: [
+      "Discussion about AI in networks",
+    ],
+  }
 ];
 
 const PreviousEvents = () => {
