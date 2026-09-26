@@ -10,7 +10,7 @@ const upcomingEvent = {
   time: "18:00 - 21:00 CET",
   location: "Brunnenweg 19, 64331 Weiterstadt, Germany",
   description: "Join us for the next chapter of NetAuto. This time, we’re diving into the NAF (Network Automation Framework) and, more importantly, how to apply it in the real world.",
-  image: "../../public/netauto-banner.png",
+  image: "netauto-banner.png",
   registrationLink: "https://forms.gle/AZ2rN9AJ2jkgahQDA",
   agenda: [
     " Introduction to the NAF framework",
