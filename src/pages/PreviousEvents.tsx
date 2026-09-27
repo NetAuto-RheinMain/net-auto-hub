@@ -130,7 +130,14 @@ const events = [
     description:
       "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
     image: "/epi-5/1.jpeg",
-    photos: [],
+    photos: [
+      "/epi-6/1.jpeg",
+      "/epi-6/2.jpeg",
+      "/epi-6/3.jpeg",
+      "/epi-6/4.jpeg",
+      "/epi-6/5.jpeg",
+      "/epi-6/6.jpeg",
+    ],
     agenda: [
       "Get together and pizza (18:00)",
       "Talk 1: 'Network Test Automation' by Sandro Vincenti",
