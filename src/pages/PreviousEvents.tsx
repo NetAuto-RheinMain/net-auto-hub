@@ -153,6 +153,7 @@ const events = [
     ],
     image: "/epi-7/3.jpeg",
     registrationLink: "https://forms.gle/HMmbu7yhJgZj1DYG6",
+    githubLink: "https://github.com/NetAuto-RheinMain/event-slides/",
     agenda: [
       "Discussion about AI in networks",
     ],
