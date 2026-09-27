@@ -129,7 +129,7 @@ const events = [
     location: "Neu-Isenburg, Hesse, Germany",
     description:
       "Episode 5 delivered deep dives into Kubernetes as Physical device orchestration and the NAF Automation Framework.",
-    image: "/epi-5/1.jpeg",
+    image: "/epi-6/4.jpeg",
     photos: [
       "/epi-6/1.jpeg",
       "/epi-6/2.jpeg",
