@@ -146,7 +146,12 @@ const events = [
     date: "August 27, 2026",
     location: "Weiterstadt, Hesse, Germany",
     description: "Join us for the next chapter of NetAuto featuring cutting-edge presentations on infrastructure as code, intent-based networking, and the future of network observability.",
-    photos: [],
+    photos: [
+      "/epi-7/1.jpeg",
+      "/epi-7/2.jpeg",
+      "/epi-7/3.jpeg",
+    ],
+    image: "/epi-7/3.jpeg",
     registrationLink: "https://forms.gle/HMmbu7yhJgZj1DYG6",
     agenda: [
       "Discussion about AI in networks",
