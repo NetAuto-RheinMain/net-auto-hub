@@ -10,7 +10,7 @@ const upcomingEvent = {
   time: "18:00 - 21:00 CET",
   location: "Brunnenweg 19, 64331 Weiterstadt, Germany",
   description: "Join us for the next chapter of NetAuto. We will explore the new Performance Test Orchestration framework and its practical applications in network automation. Don't miss this opportunity to learn, network, and enjoy some pizza and drinks!",
-  image: "netauto-banner.png",
+  image: "/netauto-banner.png",
   registrationLink: "https://forms.gle/AZ2rN9AJ2jkgahQDA",
   agenda: [
     "Introduction to the Performance Test Orchestration framework",
