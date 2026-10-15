@@ -6,16 +6,16 @@ import { RegisterInterestDialog } from "@/components/forms/RegisterInterestDialo
 
 const upcomingEvent = {
   name: "NetAuto Episode 8",
-  date: "October 22, 2026",
+  date: "November 26, 2026",
   time: "18:00 - 21:00 CET",
   location: "Brunnenweg 19, 64331 Weiterstadt, Germany",
-  description: "Join us for the next chapter of NetAuto. This time, we’re diving into the NAF (Network Automation Framework) and, more importantly, how to apply it in the real world.",
+  description: "Join us for the next chapter of NetAuto. We will explore the new Performance Test Orchestration framework and its practical applications in network automation. Don't miss this opportunity to learn, network, and enjoy some pizza and drinks!",
   image: "netauto-banner.png",
   registrationLink: "https://forms.gle/AZ2rN9AJ2jkgahQDA",
   agenda: [
-    " Introduction to the NAF framework",
-    " How to apply it",
-    " Real-world use cases and practical experience",
+    "Introduction to the Performance Test Orchestration framework",
+    "Live demonstration of the framework in action",
+    "Q&A session with the developers",
     "Pizza and drinks",
   ],
 };
